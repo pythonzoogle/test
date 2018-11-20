@@ -1,0 +1,12 @@
+.idea/
+*.py[cod]
+venv/
+*.DS_Store
+build/
+dist/
+*.egg-info/
+*.egg
+.cache
+example/example/local_settings.py
+example/db.sqlite3
+example/app.log*

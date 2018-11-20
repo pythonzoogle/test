@@ -1,0 +1,8 @@
+include LICENSE
+include README.rst
+
+exclude .gitignore
+exclude tox.ini
+exclude .travis.yml
+exclude requirements.txt
+exclude requirements-dev.txt

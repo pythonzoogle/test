@@ -1,0 +1,19 @@
+sudo: false
+language: python
+jobs:
+  include:
+    - stage: test1
+      python: "2.7"
+    - stage: test2
+      python: "3.4"
+    - stage: test3
+      python: "3.5"
+    - stage: test4
+      python: "3.6"
+cache: pip
+install:
+  - "travis_retry pip install tox-travis"
+script:
+  - tox
+after_script:
+  - cat .tox/$TOX_ENV/log/*.log
